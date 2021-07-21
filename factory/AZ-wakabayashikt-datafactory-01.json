@@ -1,0 +1,9 @@
+{
+	"name": "AZ-wakabayashikt-datafactory-01",
+	"location": "japaneast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "35527edc-64a4-42f6-b6ed-c51a12268fa6",
+		"tenantId": "729290c1-f524-441f-8482-368a737fde3b"
+	}
+}
