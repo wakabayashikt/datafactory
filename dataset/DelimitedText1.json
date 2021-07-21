@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "{year}{month}{day}.csv",
+				"fileName": "{Year}{Month}{Day}.csv",
 				"folderPath": "SalesOrderDetail",
 				"container": "saleslt"
 			},
