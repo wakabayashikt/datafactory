@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": {
-					"value": "@{utcnow()}",
+					"value": "@{convertTimeZone(utcnow(), 'UTC', 'Tokyo Standard Time')}",
 					"type": "Expression"
 				},
 				"folderPath": "SalesOrderDetail",
