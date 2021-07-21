@@ -10,7 +10,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "{Year}{Month}{Day}.csv",
+				"fileName": {
+					"value": "@{formatDateTime(utcnow(), 'yyyyMMdd')}",
+					"type": "Expression"
+				},
 				"folderPath": "SalesOrderDetail",
 				"container": "saleslt"
 			},
