@@ -1,0 +1,17 @@
+{
+	"name": "AzureDatabricks1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-5172443891504606.6.azuredatabricks.net",
+			"authentication": "MSI",
+			"workspaceResourceId": "/subscriptions/036a79cf-e267-44dc-9234-c338c05a54d1/resourceGroups/AZ-wakabayashikt-JapanEast/providers/Microsoft.Databricks/workspaces/AZ-wakabayashikt-databricks-01",
+			"existingClusterId": "0722-055554-fangs400"
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
