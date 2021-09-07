@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": {
-					"value": "formatDateTime(utcnow(), 'yyyyMMdd')",
+					"value": "File@{formatDateTime(utcnow(), 'yyyyMMdd')}",
 					"type": "Expression"
 				},
 				"folderPath": "SalesOrderDetail/OUT",
