@@ -18,6 +18,8 @@
 				"container": "saleslt"
 			},
 			"columnDelimiter": ",",
+			"compressionCodec": "gzip",
+			"compressionLevel": "Fastest",
 			"escapeChar": "\\",
 			"quoteChar": "\""
 		},
