@@ -11,10 +11,10 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": {
-					"value": "sample.gz",
+					"value": "formatDateTime(utcnow(), 'yyyyMMdd')",
 					"type": "Expression"
 				},
-				"folderPath": "SalesOrderDetail",
+				"folderPath": "SalesOrderDetail/OUT",
 				"container": "saleslt"
 			},
 			"columnDelimiter": ",",
