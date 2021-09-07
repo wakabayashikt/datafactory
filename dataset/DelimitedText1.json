@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": {
-					"value": "sample.csv",
+					"value": "sample.gz",
 					"type": "Expression"
 				},
 				"folderPath": "SalesOrderDetail",
