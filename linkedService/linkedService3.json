@@ -1,0 +1,10 @@
+{
+	"name": "linkedService3",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://azwakabayashiktstorage03.dfs.core.windows.net"
+		}
+	}
+}
