@@ -9,12 +9,16 @@
 						"referenceName": "DelimitedText2",
 						"type": "DatasetReference"
 					},
-					"name": "source1"
+					"name": "sourcedf"
 				}
 			],
 			"sinks": [],
-			"transformations": [],
-			"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> source1"
+			"transformations": [
+				{
+					"name": "rowtrans"
+				}
+			],
+			"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> sourcedf\nsourcedf alterRow() ~> rowtrans"
 		}
 	}
 }
