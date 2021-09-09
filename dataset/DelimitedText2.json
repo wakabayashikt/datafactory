@@ -1,0 +1,23 @@
+{
+	"name": "DelimitedText2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "data1.csv",
+				"folderPath": "@{formatDateTime(convertTimeZone(utcNow(), 'UTC', 'Tokyo Standard Time') , 'yyyy')}/@{formatDateTime(convertTimeZone(utcNow(), 'UTC', 'Tokyo Standard Time') , 'MM')}/@{formatDateTime(convertTimeZone(utcNow(), 'UTC', 'Tokyo Standard Time') , 'dd')}",
+				"fileSystem": "data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
