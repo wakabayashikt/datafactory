@@ -17,6 +17,15 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
+						"additionalColumns": [
+							{
+								"name": "copyDateTime",
+								"value": {
+									"value": "@{formatDateTime(convertTimeZone(utcNow(), 'UTC', 'Tokyo Standard Time') , 'yyyyMMddHHmmss')}",
+									"type": "Expression"
+								}
+							}
+						],
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
