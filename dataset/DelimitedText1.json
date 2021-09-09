@@ -11,15 +11,16 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": {
-					"value": "File@{formatDateTime(utcnow(), 'yyyyMMdd')}",
+					"value": "data1.csv",
 					"type": "Expression"
 				},
-				"folderPath": "SalesOrderDetail/OUT",
-				"container": "saleslt"
+				"folderPath": {
+					"value": "@{formatDateTime(utcnow(), 'yyyy')}/@{formatDateTime(utcnow(), 'MM')}/@{formatDateTime(utcnow(), 'dd')}",
+					"type": "Expression"
+				},
+				"container": "data"
 			},
 			"columnDelimiter": ",",
-			"compressionCodec": "gzip",
-			"compressionLevel": "Optimal",
 			"escapeChar": "\\",
 			"quoteChar": "\""
 		},
