@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "data",
-				"fileSystem": "data"
+				"folderPath": "@{formatDateTime(convertTimeZone(utcNow(), 'UTC', 'Tokyo Standard Time') , 'yyyy')}/@{formatDateTime(convertTimeZone(utcNow(), 'UTC', 'Tokyo Standard Time') , 'MM')}/@{formatDateTime(convertTimeZone(utcNow(), 'UTC', 'Tokyo Standard Time') , 'dd')}",
+				"fileSystem": "dataflow"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
