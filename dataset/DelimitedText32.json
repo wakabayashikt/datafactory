@@ -15,8 +15,8 @@
 				"fileSystem": "dataflow"
 			},
 			"columnDelimiter": ",",
-			"escapeChar": "\\",
-			"quoteChar": "\""
+			"escapeChar": "",
+			"quoteChar": ""
 		},
 		"schema": []
 	}
