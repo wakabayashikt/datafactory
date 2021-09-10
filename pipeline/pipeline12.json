@@ -209,25 +209,6 @@
 									"name": "col16",
 									"type": "String"
 								}
-							},
-							{
-								"source": {
-									"type": "String",
-									"ordinal": 17
-								},
-								"sink": {
-									"name": "col17",
-									"type": "String"
-								}
-							},
-							{
-								"source": {
-									"ordinal": 18
-								},
-								"sink": {
-									"name": "col18",
-									"type": "String"
-								}
 							}
 						]
 					}
