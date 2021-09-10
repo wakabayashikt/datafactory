@@ -221,6 +221,9 @@
 								}
 							},
 							{
+								"source": {
+									"ordinal": 18
+								},
 								"sink": {
 									"name": "col18",
 									"type": "String"
