@@ -1,0 +1,29 @@
+{
+	"name": "DelimitedText11",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "data1.csv",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@{formatDateTime(convertTimeZone(utcNow(), 'UTC', 'Tokyo Standard Time') , 'yyyy')}/@{formatDateTime(convertTimeZone(utcNow(), 'UTC', 'Tokyo Standard Time') , 'MM')}/@{formatDateTime(convertTimeZone(utcNow(), 'UTC', 'Tokyo Standard Time') , 'dd')}",
+					"type": "Expression"
+				},
+				"container": "data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
